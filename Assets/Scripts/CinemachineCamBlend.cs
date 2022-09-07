@@ -25,7 +25,7 @@ public class CinemachineCamBlend : MonoBehaviour
             }
 
             index++;
-            index %= cameras.Length;
+            index %= cameras.Length; // Take modulo to get index to start from the beginning after each press (Stop values from constantly ascending)
         }
     }
 }
